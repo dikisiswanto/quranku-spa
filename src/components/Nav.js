@@ -11,7 +11,7 @@ const Nav = () => (
             exact
             to={nav.path}
             activeStyle={{
-						  fontWeight: 600,
+              fontWeight: 600,
             }}
           >
             <div className="inline-block py-3 px-3 text-teal-900 hover:text-teal-600 transition duration-200">{nav.name}</div>

@@ -27,17 +27,17 @@ const SurahDetail = () => {
   };
 
   const scrollToVerse = (event) => {
-    const value = event.target.value;
+    const { value } = event.target;
     const refElement = `verse-${value}`;
     const element = document.getElementById(refElement);
 
     setTimeout(() => {
       window.scrollTo({
-        behavior: element ? "smooth" : "auto",
-        top: element ? element.offsetTop : 0
+        behavior: element ? 'smooth' : 'auto',
+        top: element ? element.offsetTop : 0,
       });
     }, 100);
-  } 
+  };
 
   useEffect(() => {
     clearState();
@@ -132,8 +132,10 @@ const SurahDetail = () => {
               )}
 
               <select className="col-start-2 text-center text-center text-gray-700 inline-block w-auto bg-gray-200" onChange={scrollToVerse}>
-                {surah.verses.map(({number: verseNumber}) => (
-                  <option value={verseNumber.inSurah} key={verseNumber.inSurah}>{verseNumber.inSurah}</option>
+                {surah.verses.map(({ number: verseNumber }) => (
+                  <option value={verseNumber.inSurah} key={verseNumber.inSurah}>
+                    {verseNumber.inSurah}
+                  </option>
                 ))}
               </select>
 
