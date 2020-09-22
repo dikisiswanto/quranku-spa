@@ -5,11 +5,11 @@ import {
 } from './pages';
 
 const Router = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
-      <Route exact path="./" component={Home} />
-      <Route exact path="./surah" component={Surah} />
-      <Route exact path="./surah/:surahNumber([0-9]+)" component={SurahDetail} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/surah" component={Surah} />
+      <Route exact path="/surah/:surahNumber([0-9]+)" component={SurahDetail} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

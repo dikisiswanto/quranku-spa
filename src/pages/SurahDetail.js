@@ -82,7 +82,7 @@ const SurahDetail = () => {
         <>
           <div className="bg-white py-3 rounded px-3 fixed left-0 right-0 top-0 z-20 text-center">
             <div className="container grid grid-cols-2 items-center">
-              <Link to="./surah" className="col-start-auto col-end-1">
+              <Link to="/surah" className="col-start-auto col-end-1">
                 <svg viewBox="0 0 512 512" width="24px" height="24px"><path d="M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.701H427v-42.75z" /></svg>
               </Link>
               <span className="text-xl text-gray-700 font-semibold col-start-1 col-end-3">
@@ -125,7 +125,7 @@ const SurahDetail = () => {
 
             <div className="sticky bottom-5 grid grid-cols-3 bg-teal-700 rounded-lg py-2 text-white my-3 mx-4 place-items-center justify-items-stretch shadow-md">
               {previousSurah.number && (
-                <Link to={`./surah/${previousSurah.number}`} className="text-left py-1 px-2 flex items-center">
+                <Link to={`/surah/${previousSurah.number}`} className="text-left py-1 px-2 flex items-center">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                   <span className="hidden md:inline md:ml-2">{previousSurah.name.transliteration.id}</span>
                 </Link>
@@ -140,7 +140,7 @@ const SurahDetail = () => {
               </select>
 
               {nextSurah.number && (
-                <Link to={`./surah/${nextSurah.number}`} className="col-start-4 text-right py-1 px-2 flex justify-end items-center">
+                <Link to={`/surah/${nextSurah.number}`} className="col-start-4 text-right py-1 px-2 flex justify-end items-center">
                   <span className="hidden md:inline md:mr-2">{nextSurah.name.transliteration.id}</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </Link>
