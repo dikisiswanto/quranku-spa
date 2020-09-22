@@ -50,7 +50,7 @@ const Surah = () => {
         <>
           {filteredSurah.map((surah) => (
             <Card key={surah.number}>
-              <Link to={`/surah/${surah.number}`} className="w-full flex justify-between items-start">
+              <Link to={`./surah/${surah.number}`} className="w-full flex justify-between items-start">
                 <span className="bg-teal-700 text-white inline-block py-1 px-2 rounded-lg mr-3 text-sm">{surah.number}</span>
                 <div className="text-right">
                   <span className="block text-arabic text-black text-2xl" dir="rtl" lang="ar">{surah.name.short}</span>

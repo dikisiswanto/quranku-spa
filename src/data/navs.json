@@ -3,17 +3,17 @@
 		{
 			"id": 1,
 			"name": "Beranda",
-			"path": "/"
+			"path": "./"
 		},
 		{
 			"id": 2,
 			"name": "Daftar Surat",
-			"path": "/surah"
+			"path": "./surah"
 		},
 		{
 			"id": 3,
 			"name": "Tentang",
-			"path": "/about"
+			"path": "./about"
 		}
 	]
 }

@@ -7,9 +7,9 @@ import {
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/surah" component={Surah} />
-      <Route exact path="/surah/:surahNumber([0-9]+)" component={SurahDetail} />
+      <Route exact path="./" component={Home} />
+      <Route exact path="./surah" component={Surah} />
+      <Route exact path="./surah/:surahNumber([0-9]+)" component={SurahDetail} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

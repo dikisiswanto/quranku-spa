@@ -37,12 +37,12 @@ const Home = () => {
       <>
         <div className="flex justify-between items-center">
           <h2 className="text-xl text-gray-700 font-bold tracking-wide mt-5 mb-2">Surat Pilihan</h2>
-          <Link to="/surah" className="underline text-gray-800">Semua Surat</Link>
+          <Link to="./surah" className="underline text-gray-800">Semua Surat</Link>
         </div>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-gap-3 mb-8">
           {topSurahs.map((surah) => (
             <Card key={surah.number}>
-              <Link to={`/surah/${surah.number}`} className="text-right w-full">
+              <Link to={`./surah/${surah.number}`} className="text-right w-full">
                 <span className="block text-arabic text-black text-2xl" dir="rtl" lang="ar">{surah.name.short}</span>
                 <span className="block">{surah.name.transliteration.id}</span>
                 <span className="block text-gray-700 text-sm">
