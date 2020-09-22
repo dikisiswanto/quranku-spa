@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "557b451e2bbd0ad7e0b4cfcd12b3a846",
+    "revision": "424e25179fe4db59737ccf36558bb0fb",
     "url": "/quranku-spa/index.html"
   },
   {
-    "revision": "66f207f8c2050123fb53",
-    "url": "/quranku-spa/static/css/main.ac281cc2.chunk.css"
+    "revision": "6cac9e2704604182aaf3",
+    "url": "/quranku-spa/static/css/main.2fa13dff.chunk.css"
   },
   {
     "revision": "f13c9af28e453bf5a4bb",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quranku-spa/static/js/2.bc19a78f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66f207f8c2050123fb53",
-    "url": "/quranku-spa/static/js/main.f11c6ef9.chunk.js"
+    "revision": "6cac9e2704604182aaf3",
+    "url": "/quranku-spa/static/js/main.5f4fc80e.chunk.js"
   },
   {
     "revision": "c86e63aa8d11fe619fda",
     "url": "/quranku-spa/static/js/runtime-main.5afccf48.js"
+  },
+  {
+    "revision": "831bf257749b3f411a973c519a835034",
+    "url": "/quranku-spa/static/media/lpmq.831bf257.otf"
   }
 ]);
