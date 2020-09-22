@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/quranku-spa/static/css/main.2fa13dff.chunk.css",
-    "main.js": "/quranku-spa/static/js/main.5f4fc80e.chunk.js",
-    "main.js.map": "/quranku-spa/static/js/main.5f4fc80e.chunk.js.map",
+    "main.css": "/quranku-spa/static/css/main.fa904041.chunk.css",
+    "main.js": "/quranku-spa/static/js/main.cb713ff7.chunk.js",
+    "main.js.map": "/quranku-spa/static/js/main.cb713ff7.chunk.js.map",
     "runtime-main.js": "/quranku-spa/static/js/runtime-main.5afccf48.js",
     "runtime-main.js.map": "/quranku-spa/static/js/runtime-main.5afccf48.js.map",
     "static/js/2.bc19a78f.chunk.js": "/quranku-spa/static/js/2.bc19a78f.chunk.js",
     "static/js/2.bc19a78f.chunk.js.map": "/quranku-spa/static/js/2.bc19a78f.chunk.js.map",
     "index.html": "/quranku-spa/index.html",
-    "precache-manifest.cb2a4bf6918118de7f7971eb251724bc.js": "/quranku-spa/precache-manifest.cb2a4bf6918118de7f7971eb251724bc.js",
+    "precache-manifest.7ee5cf361c8238cd4b4f03e28018004a.js": "/quranku-spa/precache-manifest.7ee5cf361c8238cd4b4f03e28018004a.js",
     "service-worker.js": "/quranku-spa/service-worker.js",
-    "static/css/main.2fa13dff.chunk.css.map": "/quranku-spa/static/css/main.2fa13dff.chunk.css.map",
-    "static/js/2.bc19a78f.chunk.js.LICENSE.txt": "/quranku-spa/static/js/2.bc19a78f.chunk.js.LICENSE.txt",
-    "static/media/main.css": "/quranku-spa/static/media/lpmq.831bf257.otf"
+    "static/css/main.fa904041.chunk.css.map": "/quranku-spa/static/css/main.fa904041.chunk.css.map",
+    "static/js/2.bc19a78f.chunk.js.LICENSE.txt": "/quranku-spa/static/js/2.bc19a78f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5afccf48.js",
     "static/js/2.bc19a78f.chunk.js",
-    "static/css/main.2fa13dff.chunk.css",
-    "static/js/main.5f4fc80e.chunk.js"
+    "static/css/main.fa904041.chunk.css",
+    "static/js/main.cb713ff7.chunk.js"
   ]
 }
