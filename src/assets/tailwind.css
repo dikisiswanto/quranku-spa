@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "lpmq";
+	src: url(/fonts/lpmq.otf) format("opentype");
+	font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	height: auto;
+}
+
+.container {
+	max-width: 768px;
+	@apply mx-auto px-3 relative;
+}
+
+.text-arabic {
+	font-family: "lpmq", Arial, sans-serif;
+	line-height: 2.5;
+}
+
+.bottom-5 {
+	bottom: .5rem;
+}
