@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0ce9529ac2c9822efb3f0c26cc738dd",
+    "revision": "cf263fd036381c33524d202038d7ea1e",
     "url": "/quranku-spa/index.html"
   },
   {
-    "revision": "82170f1c79c5f7a31080",
+    "revision": "2bfd497ad3d317895305",
     "url": "/quranku-spa/static/css/main.fa904041.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quranku-spa/static/js/2.bc19a78f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82170f1c79c5f7a31080",
-    "url": "/quranku-spa/static/js/main.3b1fe035.chunk.js"
+    "revision": "2bfd497ad3d317895305",
+    "url": "/quranku-spa/static/js/main.626507d6.chunk.js"
   },
   {
     "revision": "c86e63aa8d11fe619fda",
