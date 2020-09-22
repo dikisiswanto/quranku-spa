@@ -25,7 +25,7 @@ const Home = () => {
       }
       setIsLoading(false);
     }());
-  });
+  }, []);
 
   return (
     <App>
