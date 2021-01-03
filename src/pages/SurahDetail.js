@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
 import { Link, useParams } from 'react-router-dom';
 import App from '../App';
 import Card from '../components/Card';
@@ -158,7 +159,17 @@ const SurahDetail = () => {
       {isError && (
         <span className="text-center block my-3">{CONSTANTS.ERROR_MESSAGE}</span>
       )}
-      {isLoading && <Loading />}
+      {isLoading && (
+        <Loading>
+          <div className="flex flex-col items-center mt-5">
+            <Skeleton width={200} className="mt-3" />
+            <Skeleton width={275} className="mt-3" />
+            <Skeleton width={100} className="mt-3" />
+          </div>
+          <Skeleton height={200} className="my-4 rounded" />
+          <Skeleton height={135} count={2} className="mb-4 rounded" />
+        </Loading>
+      )}
     </App>
   );
 };

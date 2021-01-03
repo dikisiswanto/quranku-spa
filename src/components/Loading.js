@@ -1,12 +1,10 @@
 import React from 'react';
-import { SyncLoader } from 'react-spinners';
-import CONSTANTS from '../data/constants';
+import { SkeletonTheme } from 'react-loading-skeleton';
 
-const Loading = () => (
-  <div className="my-10 text-center flex flex-col row-gap-4 justify-center">
-    <SyncLoader size="16px" color={CONSTANTS.PRIMARY_COLOR} />
-    <span className="text-gray-700">{CONSTANTS.LOADING_MESSAGE}</span>
-  </div>
+const Loading = ({ children }) => (
+  <SkeletonTheme color="#fcfcfc" highlightColor="#f0f0f0">
+    {children}
+  </SkeletonTheme>
 );
 
 export default Loading;

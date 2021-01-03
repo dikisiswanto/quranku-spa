@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
 import { Link } from 'react-router-dom';
 import App from '../App';
 import Card from '../components/Card';
@@ -73,7 +74,11 @@ const Surah = () => {
           )}
         </>
       )}
-      {isLoading && <Loading />}
+      {isLoading && (
+        <Loading>
+          <Skeleton count={3} height={145} className="mb-4" />
+        </Loading>
+      )}
     </App>
   );
 };
