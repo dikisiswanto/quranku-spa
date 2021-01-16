@@ -4,7 +4,7 @@ import { navs } from '../data/navs.json';
 
 const Nav = () => (
   <nav>
-    <ul className="flex justify-between items-center gap-x-6">
+    <ul className="flex justify-between items-center gap-x-3">
       {navs.map((nav) => (
         <li key={nav.id}>
           <NavLink

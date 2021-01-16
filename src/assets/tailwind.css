@@ -4,13 +4,10 @@
 	src: url("./fonts/lpmq.otf") format("opentype");
 	font-display: swap;
 }
-/* purgecss end ignore */
 
-/* purgecss start ignore */
 @tailwind base;
 /* purgecss end ignore */
 @tailwind components;
-
 @tailwind utilities;
 
 /* purgecss start ignore */

@@ -4,7 +4,7 @@ import App from '../App';
 const About = () => (
   <App>
     <div className="bg-teal-600 py-5 px-3 text-center text-white my-5 rounded-md shadow">
-      <img src="/quranku.svg" alt="Quranku logo" className="w-1/4 mx-auto" />
+      <img src={`${process.env.PUBLIC_URL}/quranku.svg`} alt="Quranku logo" className="w-1/4 mx-auto" />
       <span className="pt-3 block text-lg md:text-xl lg:text-2xl tracking-widest font-semibold">Quranku</span>
     </div>
     <div className="py-3 text-center">
