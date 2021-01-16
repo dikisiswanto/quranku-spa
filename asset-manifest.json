@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/quranku-spa/static/css/main.f89fbe77.chunk.css",
+    "main.css": "/quranku-spa/static/css/main.5550f8f3.chunk.css",
     "main.js": "/quranku-spa/static/js/main.4dc87184.chunk.js",
     "main.js.map": "/quranku-spa/static/js/main.4dc87184.chunk.js.map",
     "runtime-main.js": "/quranku-spa/static/js/runtime-main.5afccf48.js",
@@ -8,16 +8,16 @@
     "static/js/2.780204cd.chunk.js": "/quranku-spa/static/js/2.780204cd.chunk.js",
     "static/js/2.780204cd.chunk.js.map": "/quranku-spa/static/js/2.780204cd.chunk.js.map",
     "index.html": "/quranku-spa/index.html",
-    "precache-manifest.a806c1c667c8f444330d3d5b1b5d22c5.js": "/quranku-spa/precache-manifest.a806c1c667c8f444330d3d5b1b5d22c5.js",
+    "precache-manifest.1c4729518c274538ae1501dc808c2d5c.js": "/quranku-spa/precache-manifest.1c4729518c274538ae1501dc808c2d5c.js",
     "service-worker.js": "/quranku-spa/service-worker.js",
-    "static/css/main.f89fbe77.chunk.css.map": "/quranku-spa/static/css/main.f89fbe77.chunk.css.map",
+    "static/css/main.5550f8f3.chunk.css.map": "/quranku-spa/static/css/main.5550f8f3.chunk.css.map",
     "static/js/2.780204cd.chunk.js.LICENSE.txt": "/quranku-spa/static/js/2.780204cd.chunk.js.LICENSE.txt",
     "static/media/main.css": "/quranku-spa/static/media/lpmq.831bf257.otf"
   },
   "entrypoints": [
     "static/js/runtime-main.5afccf48.js",
     "static/js/2.780204cd.chunk.js",
-    "static/css/main.f89fbe77.chunk.css",
+    "static/css/main.5550f8f3.chunk.css",
     "static/js/main.4dc87184.chunk.js"
   ]
 }
