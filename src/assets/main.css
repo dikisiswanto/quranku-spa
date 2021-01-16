@@ -16,12 +16,21 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 /* Sections
    ========================================================================== */
 
 /**
  * Remove the margin in all browsers.
  */
+
+body {
+  margin: 0;
+}
 
 /**
  * Render the `main` element consistently in IE.
@@ -49,10 +58,21 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -70,23 +90,61 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
+b,
+strong {
+  font-weight: bolder;
+}
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
 /**
  * Add the correct font size in all browsers.
  */
+
+small {
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -109,7 +167,9 @@ img {
 
 button,
 input,
-select {
+optgroup,
+select,
+textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -141,7 +201,9 @@ select { /* 1 */
  */
 
 button,
-[type="button"] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -150,7 +212,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -160,13 +224,19 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
 /**
  * Correct the padding in Firefox.
  */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -175,18 +245,41 @@ button:-moz-focusring,
  *    `fieldset` elements in all browsers.
  */
 
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
+progress {
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 
+textarea {
+  overflow: auto;
+}
+
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
@@ -202,14 +295,28 @@ button:-moz-focusring,
  * 2. Correct the outline style in Safari.
  */
 
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 
 /* Interactive
    ========================================================================== */
@@ -218,9 +325,17 @@ button:-moz-focusring,
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 
+details {
+  display: block;
+}
+
 /*
  * Add the correct display in all browsers.
  */
+
+summary {
+  display: list-item;
+}
 
 /* Misc
    ========================================================================== */
@@ -228,6 +343,10 @@ button:-moz-focusring,
 /**
  * Add the correct display in IE 10+.
  */
+
+template {
+  display: none;
+}
 
 /**
  * Add the correct display in IE 10.
@@ -247,10 +366,19 @@ button:-moz-focusring,
  * Removes the default spacing and border for appropriate elements.
  */
 
-
+blockquote,
+dl,
+dd,
 h1,
 h2,
-h4 {
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
   margin: 0;
 }
 
@@ -269,7 +397,12 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+}
 
+ol,
 ul {
   list-style: none;
   margin: 0;
@@ -286,6 +419,11 @@ ul {
  * 2. Use Tailwind's default "normal" line-height so the user isn't forced
  *    to override it to ensure consistency even when using the default theme.
  */
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
 
 /**
  * 1. Prevent padding and border from affecting element width.
@@ -326,6 +464,10 @@ ul {
  * Ensure horizontal rules are visible by default
  */
 
+hr {
+  border-top-width: 1px;
+}
+
 /**
  * Undo the `border-style: none` reset that Normalize applies to images so that
  * our `border-{width}` utilities have the expected effect.
@@ -340,17 +482,30 @@ img {
   border-style: solid;
 }
 
-input::placeholder {
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: #a0aec0;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 h1,
 h2,
-h4 {
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -375,7 +530,9 @@ a {
 
 button,
 input,
-select {
+optgroup,
+select,
+textarea {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -388,6 +545,13 @@ select {
  * 'mono' font family.
  */
 
+pre,
+code,
+kbd,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 /**
  * Make replaced elements `display: block` by default as that's
  * the behavior you want almost all of the time. Inspired by
@@ -397,7 +561,13 @@ select {
  */
 
 img,
-svg {
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   display: block;
   vertical-align: middle;
 }
@@ -409,7 +579,8 @@ svg {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -954,11 +1125,6 @@ img {
   z-index: 20;
 }
 
-.col-gap-3 {
-  grid-column-gap: 0.75rem;
-  column-gap: 0.75rem;
-}
-
 .gap-x-6 {
   grid-column-gap: 1.5rem;
   column-gap: 1.5rem;
@@ -1041,6 +1207,10 @@ img {
     transform: none;
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
+}
+
+body {
+  height: auto;
 }
 
 .container {
